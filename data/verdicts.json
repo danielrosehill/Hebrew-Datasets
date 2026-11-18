@@ -1,4 +1,1037 @@
 {
   "_about": "Cumulative triage verdicts, one per dataset id, so later sweeps only triage new datasets. Verdicts and rules: docs/classification.md.",
-  "datasets": {}
+  "datasets": {
+    "danielrosehill/English-Hebrew-Codeswitching-Sentences": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "English-Hebrew code-switching sentences read aloud, for ASR training.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Noisy-Condition-Sentences": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "Code-switching sentences recorded under noisy conditions, for ASR robustness.",
+      "variant_of": "danielrosehill/Read-Aloud-Voice-Sentences",
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Hebrish-TTS-Voice-Recordings": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "English-Hebrew voice recordings for TTS.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Jewish-Religious-Terminology-Sentences": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "Sentences with Jewish religious terminology, English-Hebrew code-switching, for ASR.",
+      "variant_of": "danielrosehill/Read-Aloud-Voice-Sentences",
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Israeli-Name-Sentences": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "Sentences with Israeli names, English-Hebrew code-switching, for ASR.",
+      "variant_of": "danielrosehill/Read-Aloud-Voice-Sentences",
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Pronunciation-Variants": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "Takes where a word is deliberately said one particular way (pronunciation variants), for ASR robustness.",
+      "variant_of": "danielrosehill/Read-Aloud-Voice-Sentences",
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Hebrish-Validation": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "Validation benchmark for English-Hebrew code-switching ASR: roughly one-minute reads of a fixed script.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "Benchmark test set for English-Hebrew code-switching ASR.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/English-Hebrew-Mixed-Sentences": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "\"Hebrish\": English sentences mixed with Hebrew, audio dataset.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Read-Aloud-Voice-Sentences": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "Master set of read-aloud takes from the Hebrish capture app (English with Hebrew code-switching); the split-out datasets are copies of its rows.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Small-STT-Eval-Audio-Dataset": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "Small STT evaluation set: 92 audio samples with ground truth, covering technical vocabulary and English/Hebrew code-switching.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Judaica-Sentences": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "borderline: card tags English only, but sentences carry Hebrew terms (code-switching); filed as specialist",
+      "variant_of": "danielrosehill/Read-Aloud-Voice-Sentences",
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "imvladikon/hebrew_speech_kan": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "Hebrew speech for ASR (Kan broadcast audio with transcripts).",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "imvladikon/hebrew_speech_coursera": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "Hebrew speech recognition dataset from Coursera course audio.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "imvladikon/hebrew_speech_campus": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "Hebrew speech from Campus IL video lectures, with subtitles aligned to the audio.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "upai-inc/saspeech": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "Single-speaker studio Hebrew speech (Shaul Amsterdamski), gold-standard subset of the OpenSLR 134 corpus; for TTS.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "sleeping-ai/Hebrew-talk": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "Hebrew speech with transcripts (audio and text columns).",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "shunyalabs/hebrew-speech-dataset": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "Hebrew speech with transcripts, 16 kHz.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "micsell/hebrew_speech_kan_nikud": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "Kan Hebrew speech with vocalised (nikud) transcripts.",
+      "variant_of": "imvladikon/hebrew_speech_kan",
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "verbit/hebrew_medical_audio": {
+      "verdict": "specialist",
+      "category": "Audio and Speech",
+      "reason": "Hebrew medical-domain audio (gated).",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "google/fleurs": {
+      "verdict": "multilingual-notable",
+      "category": "Audio and Speech",
+      "reason": "FLEURS speech benchmark; Hebrew is the `he_il` config.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "espnet/yodas": {
+      "verdict": "multilingual-notable",
+      "category": "Audio and Speech",
+      "reason": "YODAS multilingual YouTube speech; Hebrew is the `iw000` subset.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "tomron87/hebrew-wikipedia-sentences-corpus": {
+      "verdict": "specialist",
+      "category": "Sentence Datasets",
+      "reason": "Cleaned, deduplicated Hebrew sentences from 366,610 Hebrew Wikipedia articles (crawled 2026-02).",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "simsim314/Hebrew_Noam30B_Tokenized": {
+      "verdict": "specialist",
+      "category": "Text Corpora",
+      "reason": "Tokenized Hebrew text (input_ids and attention masks) for pretraining.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "sivan22/sefaria-hebrew": {
+      "verdict": "specialist",
+      "category": "Text Corpora",
+      "reason": "Jewish texts in Hebrew from the Sefaria project.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "imvladikon/hebrew_news": {
+      "verdict": "specialist",
+      "category": "Text Corpora",
+      "reason": "Hebrew news articles.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "AvishayDev/hebrew-BenIshHai": {
+      "verdict": "specialist",
+      "category": "Text Corpora",
+      "reason": "Halachot from the book Ben Ish Hai, from Hebrew Wikisource.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Norod78/HebrewLyricsDataet": {
+      "verdict": "specialist",
+      "category": "Text Corpora",
+      "reason": "Hebrew song lyrics with title and singer.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "guyhadad01/Judaism-Hebrew": {
+      "verdict": "specialist",
+      "category": "Text Corpora",
+      "reason": "Hebrew Judaism texts (responsa and related).",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "guyhadad01/Talmud-Hebrew": {
+      "verdict": "specialist",
+      "category": "Text Corpora",
+      "reason": "Talmud Bavli text in Hebrew from Wikisource.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "YanFren/Hebrew_wikipedia": {
+      "verdict": "specialist",
+      "category": "Text Corpora",
+      "reason": "Most of Hebrew Wikipedia as JSON, crawled breadth-first.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "cp500/synthetic_hebrew_medical_text": {
+      "verdict": "specialist",
+      "category": "Text Corpora",
+      "reason": "Synthetic Hebrew medical text.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "MetroCat/Hebrew-Mil": {
+      "verdict": "specialist",
+      "category": "Text Corpora",
+      "reason": "borderline: raw PDF collection, Hebrew-only; filed as a text corpus",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "wikimedia/wikipedia": {
+      "verdict": "multilingual-notable",
+      "category": "Text Corpora",
+      "reason": "Wikipedia dumps; Hebrew is the `20231101.he` config.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "ksolovev/fine-news": {
+      "verdict": "multilingual-notable",
+      "category": "Text Corpora",
+      "reason": "Multilingual news corpus from Common Crawl News; Hebrew is the `heb_Hebr` partition.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "ashercn97/hebrew_alpaca": {
+      "verdict": "specialist",
+      "category": "Instruction and Chat",
+      "reason": "Hebrew Alpaca-style instruction data (instruction, input, output).",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "jojo-ai-mst/Roleplay-Hebrew": {
+      "verdict": "specialist",
+      "category": "Instruction and Chat",
+      "reason": "Hebrew roleplay instruction data, translated from the GPTeacher roleplay set.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "openlanguagedata/flores_plus": {
+      "verdict": "multilingual-notable",
+      "category": "Translation and Parallel Text",
+      "reason": "FLORES+ translation benchmark; Hebrew is `heb_Hebr` (also Yiddish `ydd_Hebr`).",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "sentence-transformers/parallel-sentences-tatoeba": {
+      "verdict": "multilingual-notable",
+      "category": "Translation and Parallel Text",
+      "reason": "Tatoeba sentence pairs; Hebrew is the `en-he` subset.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "sentence-transformers/parallel-sentences-talks": {
+      "verdict": "multilingual-notable",
+      "category": "Translation and Parallel Text",
+      "reason": "TED-style talk pairs; Hebrew is the `en-he` subset.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "sentence-transformers/parallel-sentences-global-voices": {
+      "verdict": "multilingual-notable",
+      "category": "Translation and Parallel Text",
+      "reason": "Global Voices news pairs; Hebrew is the `en-he` subset.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "omilab/hebrew_sentiment": {
+      "verdict": "specialist",
+      "category": "NLP Task Datasets",
+      "reason": "Hebrew sentiment analysis (HebrewSentiment, positive/negative).",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "HebArabNlpProject/HebrewSentiment": {
+      "verdict": "specialist",
+      "category": "NLP Task Datasets",
+      "reason": "Hebrew sentiment (positive/negative/neutral) from the Hebrew NLP benchmark collection.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "sepidmnorozy/Hebrew_sentiment": {
+      "verdict": "specialist",
+      "category": "NLP Task Datasets",
+      "reason": "Hebrew sentiment classification with binary labels.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "tdklab/HebrewMetaphors": {
+      "verdict": "specialist",
+      "category": "NLP Task Datasets",
+      "reason": "Hebrew metaphor classification data.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "HebArabNlpProject/Hebrew-Paraphrase-Dataset": {
+      "verdict": "specialist",
+      "category": "NLP Task Datasets",
+      "reason": "9,785 LLM-generated paraphrase pairs (paragraph and sentence level); 300 manually validated gold.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "imvladikon/wikianswers_hebrew": {
+      "verdict": "specialist",
+      "category": "NLP Task Datasets",
+      "reason": "Hebrew version of WikiAnswers paraphrase/question data.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "TigreGotico/hebrew_diacritized_text": {
+      "verdict": "specialist",
+      "category": "NLP Task Datasets",
+      "reason": "~5.3M Hebrew sentences with full nikud, from the phonikud knesset_nikud_v6 corpus; for diacritization.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "sivan22/hebrew-handwritten-dataset": {
+      "verdict": "specialist",
+      "category": "OCR and Handwriting",
+      "reason": "HDD_v0: images of isolated handwritten Hebrew characters with train/test split.",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "mbole/hebrew-ocr-dataset": {
+      "verdict": "specialist",
+      "category": "OCR and Handwriting",
+      "reason": "borderline: card empty, rows are text with label/source; filed under OCR by name",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Hebrew-Language-Signage": {
+      "verdict": "specialist",
+      "category": "OCR and Handwriting",
+      "reason": "borderline: Hebrew-text photos, no transcripts; filed under OCR",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Yiddish-Sentences": {
+      "verdict": "not-relevant",
+      "category": "Audio and Speech",
+      "reason": "borderline: English sentences with Yiddish words in Latin letters (en/yi tags), not Hebrew",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Irish-English-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Currency-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Hard-ASR-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Repeated-Word-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Expanded-Acronym-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Example-Sentence-Bank": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection sentence-all",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Brand-Name-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Disfluent-Read-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Acronym-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/October-7-Memorial-Sentence-Bank": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection sentence-all",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Singing-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Whispered-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Self-Correction-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Weird-Voice-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Personal-Vocabulary-Sentence-Bank": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection sentence-all",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Spoken-Aside-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Smart-Home-Sentence-Bank": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection sentence-all",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Linux-Admin-Sentence-Bank": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection sentence-all",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/AI-Interactions-Sentence-Bank": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection sentence-all",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/Homophone-Context-Sentence-Bank": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection sentence-all",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "Hebrish/AI-Tech-Vocabulary-Sentence-Bank": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection sentence-all",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "sabuhi1997/fine-tune-hebrew-dataset": {
+      "verdict": "not-relevant",
+      "category": "Audio and Speech",
+      "reason": "borderline: audio-only folder with split labels, no transcripts, no card",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "PleIAs/common_corpus": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "No Hebrew tag or Hebrew-specific content; from mixed collection sentence-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "roneneldan/TinyStories": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection sentence-all",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "McAuley-Lab/Amazon-Reviews-2023": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection sentence-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "stanfordnlp/imdb": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection sentence-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "rajpurkar/squad": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection sentence-all",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "openslr/librispeech_asr": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "abisee/cnn_dailymail": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection sentence-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "amphion/Emilia-Dataset": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "Multilingual speech corpus without Hebrew; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "agkphysics/AudioSet": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "MLCommons/peoples_speech": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "edinburghcstr/ami": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "facebook/multilingual_librispeech": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "Multilingual speech corpus without Hebrew; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "facebook/voxpopuli": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "Multilingual speech corpus without Hebrew; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "parler-tts/mls_eng": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "speechcolab/gigaspeech3": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "mythicinfinity/libritts_r": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "speechcolab/gigaspeech": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "MLCommons/ml_spoken_words": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "Multilingual speech corpus without Hebrew; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "google/speech_commands": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "mythicinfinity/libritts": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "distil-whisper/earnings22": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "nvidia/Granary": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "Multilingual speech corpus without Hebrew; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "CSTR-Edinburgh/vctk": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Tech-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "launch/gov_report": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection sentence-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/General-English-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "kensho/spgispeech": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Smart-Home-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Personal-Vocabulary-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/AI-Interactions-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Linux-Admin-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "keithito/lj_speech": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection audio-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "agentlans/high-quality-english-sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection sentence-all",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Voice-Command-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Tech-Sentences-For-ASR-Training": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "hamishivi/ROCStories": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection sentence-all",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Homophone-Context-Sentences": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Jerusalem-Air-Quality-Shabbat": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "Air-quality sensor readings; he tag only for Shabbat labelling",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "MuskumPillerum/General-Knowledge": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection sentence-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Proofed-ASR-Cleanup-Training-Data": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/ASR-Paragraph-Breaks": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection sentence-all",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Israel-Photos": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "Israel images/geodata without Hebrew language content; from collection israel-context",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "dennlinger/wiki-paragraphs": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection sentence-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Annotated-Voice-Notes": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only read-aloud/sentence dataset (no Hebrew); from collection audio-mine",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "hpprc/enwiki-paragraphs": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection sentence-all",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "gopalkalpande/bbc-news-summary": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection sentence-third-party",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Jerusalem-High-Rise-Development": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "Israel images/geodata without Hebrew language content; from collection israel-open-data",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Sample-Voice-Context-Data": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English synthetic RAG test data",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Israel-Alerting-Zones": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "Hebrew list of alerting zones (place names), not a language dataset; from collection israel-open-data",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Israel-Open-Data-Catalogue": {
+      "verdict": "not-relevant",
+      "category": "Text Corpora",
+      "reason": "borderline: bilingual metadata catalogue of data.gov.il, not language data",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "nineninesix/harvard-sentences-tts-benchmark": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection sentence-all",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Ivory-Catalog-020226": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "Electronics price catalogue (tabular), not language data",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Jerusalem-Streetscapes": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "Israel images/geodata without Hebrew language content; from collection israel-context",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "danielrosehill/Jerusalem-Emergency-Shelters-0925": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "Israel images/geodata without Hebrew language content; from collection israel-open-data",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    },
+    "tor24/smart-home-voice-commands-v1": {
+      "verdict": "not-relevant",
+      "category": "",
+      "reason": "English-only; from mixed collection sentence-all",
+      "variant_of": null,
+      "first_seen": "2026-11-18",
+      "decided": "2026-11-18"
+    }
+  }
 }

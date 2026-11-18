@@ -14,19 +14,108 @@ This is a community resource. Contributions welcome via pull request.
 
 ## Audio and Speech
 
+| Dataset | Author | Size | License | Description |
+|---|---|---|---|---|
+| [hebrew_speech_kan](https://huggingface.co/datasets/imvladikon/hebrew_speech_kan) | imvladikon | 10K – 100K rows | — | Hebrew speech for ASR (Kan broadcast audio with transcripts). |
+| [hebrew_speech_coursera](https://huggingface.co/datasets/imvladikon/hebrew_speech_coursera) | imvladikon | 10K – 100K rows | — | Hebrew speech recognition dataset from Coursera course audio. |
+| [hebrew_speech_campus](https://huggingface.co/datasets/imvladikon/hebrew_speech_campus) | imvladikon | 10K – 100K rows | — | Hebrew speech from Campus IL video lectures, with subtitles aligned to the audio. |
+| [saspeech](https://huggingface.co/datasets/upai-inc/saspeech) | upai-inc | ~4 hours | other | Single-speaker studio Hebrew speech (Shaul Amsterdamski), gold-standard subset of the OpenSLR 134 corpus; for TTS. |
+| [Hebrew-talk](https://huggingface.co/datasets/sleeping-ai/Hebrew-talk) | sleeping-ai | 10K – 100K rows | mit | Hebrew speech with transcripts (audio and text columns). |
+| [hebrew-speech-dataset](https://huggingface.co/datasets/shunyalabs/hebrew-speech-dataset) | shunyalabs | 1K – 10K rows | — | Hebrew speech with transcripts, 16 kHz. |
+| [hebrew_speech_kan_nikud](https://huggingface.co/datasets/micsell/hebrew_speech_kan_nikud) | micsell | 10K – 100K rows | — | Kan Hebrew speech with vocalised (nikud) transcripts. |
+| [hebrew_medical_audio](https://huggingface.co/datasets/verbit/hebrew_medical_audio) | verbit | 1K – 10K rows | cc-by-nc-4.0 | Hebrew medical-domain audio (gated). |
+
+### Hebrish / danielrosehill
+
+The maintainer's own English-Hebrew code-switching speech datasets, for ASR and TTS.
+
+| Dataset | Author | Size | License | Description |
+|---|---|---|---|---|
+| [English-Hebrew-Codeswitching-Sentences](https://huggingface.co/datasets/danielrosehill/English-Hebrew-Codeswitching-Sentences) | danielrosehill | 10K – 100K rows | cc-by-4.0 | English-Hebrew code-switching sentences read aloud, for ASR training. |
+| [Noisy-Condition-Sentences](https://huggingface.co/datasets/Hebrish/Noisy-Condition-Sentences) | Hebrish | 10K – 100K rows | cc-by-4.0 | Code-switching sentences recorded under noisy conditions, for ASR robustness. |
+| [Hebrish-TTS-Voice-Recordings](https://huggingface.co/datasets/Hebrish/Hebrish-TTS-Voice-Recordings) | Hebrish | 10K – 100K rows | cc-by-nc-4.0 | English-Hebrew voice recordings for TTS. |
+| [Jewish-Religious-Terminology-Sentences](https://huggingface.co/datasets/Hebrish/Jewish-Religious-Terminology-Sentences) | Hebrish | 1K – 10K rows | cc-by-4.0 | Sentences with Jewish religious terminology, English-Hebrew code-switching, for ASR. |
+| [Israeli-Name-Sentences](https://huggingface.co/datasets/Hebrish/Israeli-Name-Sentences) | Hebrish | <1K rows | cc-by-4.0 | Sentences with Israeli names, English-Hebrew code-switching, for ASR. |
+| [Pronunciation-Variants](https://huggingface.co/datasets/Hebrish/Pronunciation-Variants) | Hebrish | <1K rows | cc-by-4.0 | Takes where a word is deliberately said one particular way (pronunciation variants), for ASR robustness. |
+| [Hebrish-Validation](https://huggingface.co/datasets/Hebrish/Hebrish-Validation) | Hebrish | <1K rows | cc-by-4.0 | Validation benchmark for English-Hebrew code-switching ASR: roughly one-minute reads of a fixed script. |
+| [English-Hebrew-Codeswitching-ASR-Benchmark](https://huggingface.co/datasets/Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark) | Hebrish | <1K rows | cc-by-4.0 | Benchmark test set for English-Hebrew code-switching ASR. |
+| [English-Hebrew-Mixed-Sentences](https://huggingface.co/datasets/Hebrish/English-Hebrew-Mixed-Sentences) | Hebrish | <1K rows | mit | "Hebrish": English sentences mixed with Hebrew, audio dataset. |
+| [Read-Aloud-Voice-Sentences](https://huggingface.co/datasets/danielrosehill/Read-Aloud-Voice-Sentences) | danielrosehill | 10K – 100K rows | cc-by-4.0 | Master set of read-aloud takes from the Hebrish capture app (English with Hebrew code-switching); the split-out datasets are copies of its rows. |
+| [Small-STT-Eval-Audio-Dataset](https://huggingface.co/datasets/danielrosehill/Small-STT-Eval-Audio-Dataset) | danielrosehill | 92 samples | cc-by-4.0 | Small STT evaluation set: 92 audio samples with ground truth, covering technical vocabulary and English/Hebrew code-switching. |
+| [Judaica-Sentences](https://huggingface.co/datasets/Hebrish/Judaica-Sentences) | Hebrish | 1K – 10K rows | cc-by-4.0 | English sentences from traditional Jewish works with Hebrew terms read in; code-switching ASR. |
+
+### Multilingual datasets with a Hebrew portion
+
+| Dataset | Author | Size | License | Description |
+|---|---|---|---|---|
+| [fleurs](https://huggingface.co/datasets/google/fleurs) | google | 100K – 1M rows | cc-by-4.0 | FLEURS speech benchmark; Hebrew is the `he_il` config. |
+| [yodas](https://huggingface.co/datasets/espnet/yodas) | espnet | — | cc-by-3.0 | YODAS multilingual YouTube speech; Hebrew is the `iw000` subset. |
+
 ## Sentence Datasets
+
+| Dataset | Author | Size | License | Description |
+|---|---|---|---|---|
+| [hebrew-wikipedia-sentences-corpus](https://huggingface.co/datasets/tomron87/hebrew-wikipedia-sentences-corpus) | tomron87 | 10,999,257 sentences | cc-by-sa-3.0 | Cleaned, deduplicated Hebrew sentences from 366,610 Hebrew Wikipedia articles (crawled 2026-02). |
 
 ## Text Corpora
 
+| Dataset | Author | Size | License | Description |
+|---|---|---|---|---|
+| [Hebrew_Noam30B_Tokenized](https://huggingface.co/datasets/simsim314/Hebrew_Noam30B_Tokenized) | simsim314 | — | mit | Tokenized Hebrew text (input_ids and attention masks) for pretraining. |
+| [sefaria-hebrew](https://huggingface.co/datasets/sivan22/sefaria-hebrew) | sivan22 | 1M – 10M rows | — | Jewish texts in Hebrew from the Sefaria project. |
+| [hebrew_news](https://huggingface.co/datasets/imvladikon/hebrew_news) | imvladikon | 100K – 1M rows | other | Hebrew news articles. |
+| [hebrew-BenIshHai](https://huggingface.co/datasets/AvishayDev/hebrew-BenIshHai) | AvishayDev | 1K – 10K rows | — | Halachot from the book Ben Ish Hai, from Hebrew Wikisource. |
+| [HebrewLyricsDataet](https://huggingface.co/datasets/Norod78/HebrewLyricsDataet) | Norod78 | 10K – 100K rows | — | Hebrew song lyrics with title and singer. |
+| [Judaism-Hebrew](https://huggingface.co/datasets/guyhadad01/Judaism-Hebrew) | guyhadad01 | 1K – 10K rows | — | Hebrew Judaism texts (responsa and related). |
+| [Talmud-Hebrew](https://huggingface.co/datasets/guyhadad01/Talmud-Hebrew) | guyhadad01 | <1K rows | — | Talmud Bavli text in Hebrew from Wikisource. |
+| [Hebrew_wikipedia](https://huggingface.co/datasets/YanFren/Hebrew_wikipedia) | YanFren | 100K – 1M rows | mit | Most of Hebrew Wikipedia as JSON, crawled breadth-first. |
+| [synthetic_hebrew_medical_text](https://huggingface.co/datasets/cp500/synthetic_hebrew_medical_text) | cp500 | 1K – 10K rows | — | Synthetic Hebrew medical text. |
+| [Hebrew-Mil](https://huggingface.co/datasets/MetroCat/Hebrew-Mil) | MetroCat | 1K – 10K rows | gpl | Hebrew-only PDFs on military and defence topics. |
+
+### Multilingual datasets with a Hebrew portion
+
+| Dataset | Author | Size | License | Description |
+|---|---|---|---|---|
+| [wikipedia](https://huggingface.co/datasets/wikimedia/wikipedia) | wikimedia | 10M – 100M rows | cc-by-sa-3.0 | Wikipedia dumps; Hebrew is the `20231101.he` config. |
+| [fine-news](https://huggingface.co/datasets/ksolovev/fine-news) | ksolovev | 100M – 1B rows | — | Multilingual news corpus from Common Crawl News; Hebrew is the `heb_Hebr` partition. |
+
 ## Instruction and Chat
+
+| Dataset | Author | Size | License | Description |
+|---|---|---|---|---|
+| [hebrew_alpaca](https://huggingface.co/datasets/ashercn97/hebrew_alpaca) | ashercn97 | 1K – 10K rows | — | Hebrew Alpaca-style instruction data (instruction, input, output). |
+| [Roleplay-Hebrew](https://huggingface.co/datasets/jojo-ai-mst/Roleplay-Hebrew) | jojo-ai-mst | 1K – 10K rows | mit | Hebrew roleplay instruction data, translated from the GPTeacher roleplay set. |
 
 ## Translation and Parallel Text
 
+### Multilingual datasets with a Hebrew portion
+
+| Dataset | Author | Size | License | Description |
+|---|---|---|---|---|
+| [flores_plus](https://huggingface.co/datasets/openlanguagedata/flores_plus) | openlanguagedata | 100K – 1M rows | cc-by-sa-4.0 | FLORES+ translation benchmark; Hebrew is `heb_Hebr` (also Yiddish `ydd_Hebr`). |
+| [parallel-sentences-tatoeba](https://huggingface.co/datasets/sentence-transformers/parallel-sentences-tatoeba) | sentence-transformers | 1M – 10M rows | — | Tatoeba sentence pairs; Hebrew is the `en-he` subset. |
+| [parallel-sentences-talks](https://huggingface.co/datasets/sentence-transformers/parallel-sentences-talks) | sentence-transformers | 10M – 100M rows | — | TED-style talk pairs; Hebrew is the `en-he` subset. |
+| [parallel-sentences-global-voices](https://huggingface.co/datasets/sentence-transformers/parallel-sentences-global-voices) | sentence-transformers | 1M – 10M rows | — | Global Voices news pairs; Hebrew is the `en-he` subset. |
+
 ## NLP Task Datasets
+
+| Dataset | Author | Size | License | Description |
+|---|---|---|---|---|
+| [hebrew_sentiment](https://huggingface.co/datasets/omilab/hebrew_sentiment) | omilab | 10K – 100K rows | mit | Hebrew sentiment analysis (HebrewSentiment, positive/negative). |
+| [HebrewSentiment](https://huggingface.co/datasets/HebArabNlpProject/HebrewSentiment) | HebArabNlpProject | 10K – 100K rows | other | Hebrew sentiment (positive/negative/neutral) from the Hebrew NLP benchmark collection. |
+| [Hebrew_sentiment](https://huggingface.co/datasets/sepidmnorozy/Hebrew_sentiment) | sepidmnorozy | 10K – 100K rows | — | Hebrew sentiment classification with binary labels. |
+| [HebrewMetaphors](https://huggingface.co/datasets/tdklab/HebrewMetaphors) | tdklab | 1K – 10K rows | — | Hebrew metaphor classification data. |
+| [Hebrew-Paraphrase-Dataset](https://huggingface.co/datasets/HebArabNlpProject/Hebrew-Paraphrase-Dataset) | HebArabNlpProject | 9,785 instances | cc-by-sa-4.0 | 9,785 LLM-generated paraphrase pairs (paragraph and sentence level); 300 manually validated gold. |
+| [wikianswers_hebrew](https://huggingface.co/datasets/imvladikon/wikianswers_hebrew) | imvladikon | 1M – 10M rows | — | Hebrew version of WikiAnswers paraphrase/question data. |
+| [hebrew_diacritized_text](https://huggingface.co/datasets/TigreGotico/hebrew_diacritized_text) | TigreGotico | ~5.3M sentences | cc-by-4.0 | ~5.3M Hebrew sentences with full nikud, from the phonikud knesset_nikud_v6 corpus; for diacritization. |
 
 ## OCR and Handwriting
 
-## Benchmarks and Evaluation
+| Dataset | Author | Size | License | Description |
+|---|---|---|---|---|
+| [hebrew-handwritten-dataset](https://huggingface.co/datasets/sivan22/hebrew-handwritten-dataset) | sivan22 | 1K – 10K rows | cc-by-3.0 | HDD_v0: images of isolated handwritten Hebrew characters with train/test split. |
+| [hebrew-ocr-dataset](https://huggingface.co/datasets/mbole/hebrew-ocr-dataset) | mbole | <1K rows | — | Hebrew text with label and source columns for OCR work. |
+| [Hebrew-Language-Signage](https://huggingface.co/datasets/danielrosehill/Hebrew-Language-Signage) | danielrosehill | 68 images | — | 68 photographs of Hebrew signage in Israel (street, commercial and public signs). |
 
 ---
 
