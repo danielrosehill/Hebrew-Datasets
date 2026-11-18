@@ -6,7 +6,7 @@ Part of the [Hebrew AI](https://github.com/danielrosehill/Hebrew-AI) index. This
 
 - Hebrew-language datasets: speech and audio, read-speech and TTS voices, sentence datasets, text corpora, instruction and chat data, task datasets (NER, sentiment, QA, nikud), OCR and handwriting, benchmarks.
 - English-Hebrew code-switching data and he↔en parallel text.
-- Notable multilingual datasets with a usable Hebrew portion (a Hebrew config or split), in a separate *Multilingual datasets with a Hebrew portion* subsection, never mixed with the Hebrew-specific tables.
+- Notable multilingual datasets with a usable Hebrew portion (a Hebrew config or split), in a separate *Multilingual datasets with a Hebrew portion* subsection, never mixed with the Hebrew-specific subsections.
 
 The Hebrew-specific/multilingual test is in [docs/classification.md](docs/classification.md).
 
