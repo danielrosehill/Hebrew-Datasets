@@ -1,0 +1,4 @@
+{
+  "_about": "Cumulative triage verdicts, one per dataset id, so later sweeps only triage new datasets. Verdicts and rules: docs/classification.md.",
+  "datasets": {}
+}

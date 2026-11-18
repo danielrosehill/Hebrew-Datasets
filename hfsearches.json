@@ -1,0 +1,199 @@
+{
+  "_about": "Hugging Face Hub dataset searches for Hebrew. mode 'tag' = Hebrew language tag + one task category + one sort: the firehose, mostly multilingual datasets (C4, Wikipedia, Common Voice). mode 'name' = dataset ids containing 'heb' (also matches 'hebrew'), any task: the specialist lane, since many Hebrew datasets set no task category. scripts/snapshot.py runs them; web_url is the same search in the browser. Add a permutation by adding an entry; ids are <task-short>-<sort> or <short>-name.",
+  "api_notes": "Datasets use filter=language:he and filter=task_categories:<task> (repeatable, ANDed). On 2026-11-18 filter=language:he alone hit the 1000 cap led by allenai/c4 and wikimedia/wikipedia; with task_categories:automatic-speech-recognition it returned 72; search=hebrew returned 229.",
+  "kind": "datasets",
+  "language_tag": "language:he",
+  "api_base": "https://huggingface.co/api/datasets",
+  "sorts": {
+    "trending": {
+      "web": "trending",
+      "api": "trendingScore"
+    },
+    "downloads": {
+      "web": "downloads",
+      "api": "downloads"
+    },
+    "likes": {
+      "web": "likes",
+      "api": "likes"
+    },
+    "recent": {
+      "web": "created",
+      "api": "createdAt"
+    }
+  },
+  "known_hebrew_authors": [
+    "ivrit-ai",
+    "imvladikon",
+    "dicta-il",
+    "HeNLP",
+    "Hebrish",
+    "verbit",
+    "upai-inc",
+    "SLPRL-HUJI",
+    "hebrew-llm-leaderboard",
+    "NNLP-IL"
+  ],
+  "searches": [
+    {
+      "id": "asr-trending",
+      "mode": "tag",
+      "task": "automatic-speech-recognition",
+      "sort": "trending",
+      "limit": 100,
+      "tier": "core",
+      "readme_section": "Audio and Speech",
+      "web_url": "https://huggingface.co/datasets?task_categories=task_categories:automatic-speech-recognition&language=language:he&sort=trending"
+    },
+    {
+      "id": "asr-downloads",
+      "mode": "tag",
+      "task": "automatic-speech-recognition",
+      "sort": "downloads",
+      "limit": 100,
+      "tier": "core",
+      "readme_section": "Audio and Speech",
+      "web_url": "https://huggingface.co/datasets?task_categories=task_categories:automatic-speech-recognition&language=language:he&sort=downloads"
+    },
+    {
+      "id": "tts-trending",
+      "mode": "tag",
+      "task": "text-to-speech",
+      "sort": "trending",
+      "limit": 100,
+      "tier": "core",
+      "readme_section": "Audio and Speech",
+      "web_url": "https://huggingface.co/datasets?task_categories=task_categories:text-to-speech&language=language:he&sort=trending"
+    },
+    {
+      "id": "tts-downloads",
+      "mode": "tag",
+      "task": "text-to-speech",
+      "sort": "downloads",
+      "limit": 100,
+      "tier": "core",
+      "readme_section": "Audio and Speech",
+      "web_url": "https://huggingface.co/datasets?task_categories=task_categories:text-to-speech&language=language:he&sort=downloads"
+    },
+    {
+      "id": "text-generation-trending",
+      "mode": "tag",
+      "task": "text-generation",
+      "sort": "trending",
+      "limit": 100,
+      "tier": "core",
+      "readme_section": "Text Corpora",
+      "web_url": "https://huggingface.co/datasets?task_categories=task_categories:text-generation&language=language:he&sort=trending"
+    },
+    {
+      "id": "text-generation-downloads",
+      "mode": "tag",
+      "task": "text-generation",
+      "sort": "downloads",
+      "limit": 100,
+      "tier": "core",
+      "readme_section": "Text Corpora",
+      "web_url": "https://huggingface.co/datasets?task_categories=task_categories:text-generation&language=language:he&sort=downloads"
+    },
+    {
+      "id": "translation-trending",
+      "mode": "tag",
+      "task": "translation",
+      "sort": "trending",
+      "limit": 100,
+      "tier": "core",
+      "readme_section": "Translation and Parallel Text",
+      "web_url": "https://huggingface.co/datasets?task_categories=task_categories:translation&language=language:he&sort=trending"
+    },
+    {
+      "id": "translation-downloads",
+      "mode": "tag",
+      "task": "translation",
+      "sort": "downloads",
+      "limit": 100,
+      "tier": "core",
+      "readme_section": "Translation and Parallel Text",
+      "web_url": "https://huggingface.co/datasets?task_categories=task_categories:translation&language=language:he&sort=downloads"
+    },
+    {
+      "id": "all-name",
+      "mode": "name",
+      "search": "heb",
+      "sort": "downloads",
+      "limit": 1000,
+      "tier": "core",
+      "readme_section": "(any)",
+      "web_url": "https://huggingface.co/datasets?search=heb&sort=downloads"
+    },
+    {
+      "id": "audio-classification-downloads",
+      "mode": "tag",
+      "task": "audio-classification",
+      "sort": "downloads",
+      "limit": 100,
+      "tier": "extra",
+      "readme_section": "Audio and Speech",
+      "web_url": "https://huggingface.co/datasets?task_categories=task_categories:audio-classification&language=language:he&sort=downloads"
+    },
+    {
+      "id": "text-classification-downloads",
+      "mode": "tag",
+      "task": "text-classification",
+      "sort": "downloads",
+      "limit": 100,
+      "tier": "extra",
+      "readme_section": "NLP Task Datasets",
+      "web_url": "https://huggingface.co/datasets?task_categories=task_categories:text-classification&language=language:he&sort=downloads"
+    },
+    {
+      "id": "ner-downloads",
+      "mode": "tag",
+      "task": "token-classification",
+      "sort": "downloads",
+      "limit": 100,
+      "tier": "extra",
+      "readme_section": "NLP Task Datasets",
+      "web_url": "https://huggingface.co/datasets?task_categories=task_categories:token-classification&language=language:he&sort=downloads"
+    },
+    {
+      "id": "qa-downloads",
+      "mode": "tag",
+      "task": "question-answering",
+      "sort": "downloads",
+      "limit": 100,
+      "tier": "extra",
+      "readme_section": "NLP Task Datasets",
+      "web_url": "https://huggingface.co/datasets?task_categories=task_categories:question-answering&language=language:he&sort=downloads"
+    },
+    {
+      "id": "summarization-downloads",
+      "mode": "tag",
+      "task": "summarization",
+      "sort": "downloads",
+      "limit": 100,
+      "tier": "extra",
+      "readme_section": "NLP Task Datasets",
+      "web_url": "https://huggingface.co/datasets?task_categories=task_categories:summarization&language=language:he&sort=downloads"
+    },
+    {
+      "id": "sentence-similarity-downloads",
+      "mode": "tag",
+      "task": "sentence-similarity",
+      "sort": "downloads",
+      "limit": 100,
+      "tier": "extra",
+      "readme_section": "Sentence Datasets",
+      "web_url": "https://huggingface.co/datasets?task_categories=task_categories:sentence-similarity&language=language:he&sort=downloads"
+    },
+    {
+      "id": "ocr-downloads",
+      "mode": "tag",
+      "task": "image-to-text",
+      "sort": "downloads",
+      "limit": 100,
+      "tier": "extra",
+      "readme_section": "OCR and Handwriting",
+      "web_url": "https://huggingface.co/datasets?task_categories=task_categories:image-to-text&language=language:he&sort=downloads"
+    }
+  ]
+}

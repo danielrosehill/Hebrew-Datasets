@@ -1,0 +1,84 @@
+{
+  "_about": "The maintainer's curated Hugging Face collections. `uv run scripts/snapshot.py --collections` imports the dataset items from each; collections are curated but not pre-classified (some, like the sentence and audio dataset collections, are not Hebrew-only), so items still go through triage (docs/classification.md). The README's Curated Collections table is generated from this file. Slugs end in a hash; links without it 404.",
+  "owner": "danielrosehill",
+  "owner_collections_url": "https://huggingface.co/danielrosehill/collections",
+  "collections": [
+    {
+      "key": "hebrew-audio",
+      "slug": "danielrosehill/hebrew-audio-datasets-6ad6923f2ea298b0df13adf5",
+      "title": "Hebrew audio datasets",
+      "url": "https://huggingface.co/collections/danielrosehill/hebrew-audio-datasets-6ad6923f2ea298b0df13adf5",
+      "why": "Hebrew speech and audio datasets"
+    },
+    {
+      "key": "hebrew-datasets",
+      "slug": "danielrosehill/hebrew-datasets-680428e2813deb0a8b8d1271",
+      "title": "Hebrew datasets",
+      "url": "https://huggingface.co/collections/danielrosehill/hebrew-datasets-680428e2813deb0a8b8d1271",
+      "why": "Hebrew text and NLP datasets"
+    },
+    {
+      "key": "hebrew",
+      "slug": "danielrosehill/hebrew-6ad68f42575d0b5073d19e86",
+      "title": "Hebrew",
+      "url": "https://huggingface.co/collections/danielrosehill/hebrew-6ad68f42575d0b5073d19e86",
+      "why": "General Hebrew collection: models and datasets across tasks"
+    },
+    {
+      "key": "code-switching",
+      "slug": "danielrosehill/code-switching-english-and-hebrew-all-resources-6acfdcb1e11911797af4c3b3",
+      "title": "Code Switching (English And Hebrew) - All Resources",
+      "url": "https://huggingface.co/collections/danielrosehill/code-switching-english-and-hebrew-all-resources-6acfdcb1e11911797af4c3b3",
+      "why": "English-Hebrew code-switching models and datasets"
+    },
+    {
+      "key": "sentence-all",
+      "slug": "danielrosehill/sentence-datasets-all-6aeeb0facb33a09378459623",
+      "title": "Sentence Datasets - All",
+      "url": "https://huggingface.co/collections/danielrosehill/sentence-datasets-all-6aeeb0facb33a09378459623",
+      "why": "Sentence datasets (mixed languages; Hebrew ones are listed here)"
+    },
+    {
+      "key": "sentence-mine",
+      "slug": "danielrosehill/sentence-datasets-mine-6aeeb2ae61663e960fade58c",
+      "title": "Sentence Datasets - Mine",
+      "url": "https://huggingface.co/collections/danielrosehill/sentence-datasets-mine-6aeeb2ae61663e960fade58c",
+      "why": "The maintainer's own sentence datasets"
+    },
+    {
+      "key": "sentence-third-party",
+      "slug": "danielrosehill/sentence-datasets-third-party-6aeea2c7b5a404455057151a",
+      "title": "Sentence Datasets - Third Party",
+      "url": "https://huggingface.co/collections/danielrosehill/sentence-datasets-third-party-6aeea2c7b5a404455057151a",
+      "why": "Third-party sentence datasets"
+    },
+    {
+      "key": "audio-mine",
+      "slug": "danielrosehill/audio-datasets-mine-6aee9e80cb04e786c3fdbeaa",
+      "title": "Audio Datasets - Mine",
+      "url": "https://huggingface.co/collections/danielrosehill/audio-datasets-mine-6aee9e80cb04e786c3fdbeaa",
+      "why": "The maintainer's own audio datasets"
+    },
+    {
+      "key": "audio-third-party",
+      "slug": "danielrosehill/audio-datasets-third-party-classics-6aeea2c2b9ec48969f48e054",
+      "title": "Audio Datasets - Third Party Classics",
+      "url": "https://huggingface.co/collections/danielrosehill/audio-datasets-third-party-classics-6aeea2c2b9ec48969f48e054",
+      "why": "Well-known third-party audio datasets"
+    },
+    {
+      "key": "israel-context",
+      "slug": "danielrosehill/israel-context-datasets-6ad676a3773a64192165a96c",
+      "title": "Israel Context Datasets",
+      "url": "https://huggingface.co/collections/danielrosehill/israel-context-datasets-6ad676a3773a64192165a96c",
+      "why": "Datasets about Israel, often Hebrew-language"
+    },
+    {
+      "key": "israel-open-data",
+      "slug": "danielrosehill/israel-open-data-69fba702e180798fe3761073",
+      "title": "Israel Open Data",
+      "url": "https://huggingface.co/collections/danielrosehill/israel-open-data-69fba702e180798fe3761073",
+      "why": "Israeli government open data on the Hub"
+    }
+  ]
+}

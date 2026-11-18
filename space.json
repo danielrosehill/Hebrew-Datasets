@@ -1,0 +1,22 @@
+{
+  "_about": "Settings for scripts/build_space.py and the build-hf-space skill. The Space is generated from README.md; never edit space/ by hand.",
+  "space_id": "danielrosehill/Hebrew-Datasets",
+  "space_url": "https://huggingface.co/spaces/danielrosehill/Hebrew-Datasets",
+  "title": "Hebrew Datasets",
+  "subtitle": "Searchable catalogue of Hebrew-language datasets: speech and audio, sentence datasets, text corpora, translation and NLP tasks. Hebrew-specific datasets are kept apart from multilingual datasets that include Hebrew.",
+  "github_repo": "https://github.com/danielrosehill/Hebrew-Datasets",
+  "links": {
+    "Hebrew AI Models": "https://huggingface.co/spaces/danielrosehill/Hebrew-AI-Models",
+    "Curated collections": "https://huggingface.co/danielrosehill/collections"
+  },
+  "front_matter": {
+    "title": "Hebrew Datasets",
+    "emoji": "🗂️",
+    "colorFrom": "indigo",
+    "colorTo": "blue",
+    "sdk": "static",
+    "pinned": "false",
+    "license": "cc-by-4.0",
+    "short_description": "Searchable catalogue of Hebrew-language datasets"
+  }
+}
